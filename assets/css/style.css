@@ -15,7 +15,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 10px;
+    padding: 45px;
 }
 
 .btn-header{
@@ -24,12 +24,77 @@ body{
     border: 1px solid #8B5CF6;
     border-radius: 8px;
     background-color: transparent;
+
     display: flex;
     align-items: center;
+    gap: 12px;
+
     cursor: pointer;
     transition: all .3s;
 }
 
 .btn-header:hover{
     transform: scale(1.1);
+}
+
+.habits{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 60px;
+}
+
+.habit{
+    width: 64px;
+    height: 64px;
+    font-size: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#form-habits{
+    display: flex;
+
+    padding: 0px 45px;
+}
+
+.days{
+    display: flex;
+    margin-left: 32px;
+    gap: 45px;
+}
+
+.day{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.day div{
+    margin-bottom: 8px;
+
+    font-size: 20px;
+    line-height: 125%;
+
+    color: #a1a1a1;
+    text-align: center;
+}
+
+input{
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 64px;
+    height: 64px;
+
+    border: 3px solid #27272a;
+    border-radius: 8px;
+    background: #18181b;
+}
+
+input:checked{
+    background: #8B5CF6;
+    border: 2px solid #a78bfa;
 }
