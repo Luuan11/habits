@@ -16,6 +16,10 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 45px;
+
+    position: fixed;
+    width: 100%;
+    background-color: #09090a;
 }
 
 .btn-header{
@@ -57,7 +61,8 @@ body{
 #form-habits{
     display: flex;
 
-    padding: 0px 45px;
+    padding: 180px 45px 45px;
+    width: fit-content;
 }
 
 .days{
@@ -97,4 +102,11 @@ input{
 input:checked{
     background: #8B5CF6;
     border: 2px solid #a78bfa;
+}
+
+@media (max-width: 570px){
+    .btn-header div{
+        display: none;
+        justify-content: space-around;
+    }
 }
