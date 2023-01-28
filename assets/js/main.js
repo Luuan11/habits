@@ -1,11 +1,22 @@
 const form = document.querySelector('#form-habits');
 const nlwSetup = new NLWSetup(form);
+const button = document.querySelector('.btn-header');
 
-const data = {
-    run: ['01-01', '01-02', '01-06'],
-    takePills: ['01-03'],
-    journal: ['01-02']
+button.addEventListener('click', addHabit);
+form.addEventListener('change', saveHabit);
+
+function addHabit(){
+    const today = new Date().toLocaleDateString('pt-br').slice(0, -5);
+    const dayExists = nlwSetup.dayExists(today)
+
+    if(dayExists){
+        alert('Seu dia já está cadastrado abaixo 💜');
+        return
+    }
+
+    nlwSetup.addDay(today)
 }
 
-nlwSetup.setData(data)
-nlwSetup.load()
+function saveHabit(){
+    
+}
