@@ -15,6 +15,7 @@ esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML
 - CSS
 - Javascript
+- Google Fonts : Poppins
 
 ## Clone
 
