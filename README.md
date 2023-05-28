@@ -5,12 +5,10 @@
 
 ## <p align="center"> <a href="https://habits-jet.vercel.app/">Clique aqui para ver meu projeto!</a> </p>
 
-## 💬 Sobre
+## 💬 Sobre:
 Pagina desenvolvida para controlar seus habitos diários
 
 ### 💡 Tecnologias:
-
-esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML
 - CSS
